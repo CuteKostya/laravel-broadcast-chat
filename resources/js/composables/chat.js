@@ -28,6 +28,6 @@ export default function useChat() {
         messages,
         errors,
         getMessages,
-        addMessage
+        addMessage,
     }
 }

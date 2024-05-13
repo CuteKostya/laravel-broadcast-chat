@@ -2,19 +2,23 @@
 
 namespace App\Http\Controllers;
 
+use App\Broadcasting\ActiveChannel;
+use App\Events\ActiveSent;
 use App\Events\MessageSent;
 use App\Http\Requests\MessageFormRequest;
 use App\Models\Message;
+
+use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Carbon;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 
 class ChatController extends Controller
 {
     public function index(Request $request)
     {
-        auth()->loginUsingId(1);
-
         return view('welcome');
     }
 
@@ -35,4 +39,6 @@ class ChatController extends Controller
 
         return $message;
     }
+    
+
 }

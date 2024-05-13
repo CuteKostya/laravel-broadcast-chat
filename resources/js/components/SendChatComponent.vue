@@ -56,20 +56,16 @@ export default {
     const form = reactive({
       message: '',
     })
-
     const {errors, addMessage} = useChat()
-
     const sendMessage = async () => {
       await addMessage(form)
-
       form.message = ''
     }
-
     return {
       errors,
       form,
       sendMessage
     }
-  }
+  },
 };
 </script>

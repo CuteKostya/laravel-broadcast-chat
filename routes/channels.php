@@ -1,5 +1,6 @@
 <?php
 
+use App\Broadcasting\ActiveChannel;
 use App\Broadcasting\ChatChannel;
 use Illuminate\Support\Facades\Broadcast;
 
