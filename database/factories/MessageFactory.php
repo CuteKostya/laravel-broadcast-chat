@@ -19,6 +19,7 @@ class MessageFactory extends Factory
         return [
             'message' => fake()->name(),
             'user_id' => '1',
+            'status' => '1',
         ];
     }
 }

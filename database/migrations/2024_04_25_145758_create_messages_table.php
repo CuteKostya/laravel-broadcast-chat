@@ -18,6 +18,7 @@ return new class extends Migration {
                 ->cascadeOnUpdate()
                 ->cascadeOnDelete();
             $table->text('message');
+            $table->integer('status');
             $table->timestamps();
         });
     }

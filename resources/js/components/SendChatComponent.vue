@@ -55,11 +55,13 @@ export default {
   setup() {
     const form = reactive({
       message: '',
+      status: 1,
     })
     const {errors, addMessage} = useChat()
     const sendMessage = async () => {
       await addMessage(form)
       form.message = ''
+      form.status = 1
     }
     return {
       errors,

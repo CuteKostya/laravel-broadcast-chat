@@ -15,6 +15,7 @@ class Message extends Model
         = [
             'user_id',
             'message',
+            'status',
         ];
 
     public function user(): BelongsTo

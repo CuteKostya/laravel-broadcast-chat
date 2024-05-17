@@ -24,6 +24,7 @@ class MessageFormRequest extends FormRequest
         return [
 
             'message' => ['required', 'string', 'min:3'],
+            'status' => [],
         ];
     }
 }
